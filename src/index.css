@@ -1,13 +1,181 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "PT Sans", sans-serif;
+}
+.App {
+  background-color: rgb(233, 233, 233);
+}
+section {
+  background-color: white;
+  margin: 15px;
+  margin-bottom: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  position: relative;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header {
+  background: rgb(0, 0, 73);
+  color: white;
+}
+
+.navbar {
+  width: 95%;
+  margin: 0 auto;
+  padding: 15px 20px 5px;
+}
+
+.logo-nav {
+  width: 70px;
+  height: 60px;
+  margin-right: 15px;
+}
+
+.navbar1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin-left: 5px;
+}
+
+.menu li {
+  padding: 10px 15px;
+  text-transform: uppercase;
+}
+.search {
+  width: 50%;
+  height: 50px;
+  border-radius: 5px;
+  padding: 0 10px;
+  border: none;
+  outline: none;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+  transition: 1s;
+}
+
+.search:focus {
+  border: 1px solid darkblue;
+}
+
+.busqueda-interna {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.busqueda-interna li a {
+  text-decoration: none;
+  color: white;
+}
+
+.busqueda-interna li {
+  padding: 10px 30px 3px;
+}
+
+.div-footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.img-galery {
+  margin: 0;
+  padding: 0;
+  height: 50vh;
+}
+
+.img-galery img {
+  width: 100%;
+  height: 100%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.img-galery::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: linear-gradient(rgba(255, 255, 255, 0), black);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.parrafo-img {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+}
+
+.category {
+  height: 25vh;
+}
+
+.mas-vendido {
+  background-color: rgb(233, 233, 233);
+}
+.mas-vendido ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+}
+.mas-vendido ol li {
+  width: 23%;
+  min-width: 200px;
+  max-width: 250px;
+  padding: 10px;
+}
+
+.mas-vendido ol li .div-mas-vendido {
+  background-color: white;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+.mas-vendido ol li .div-mas-vendido:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  border: 1px solid darkblue;
+  color: rgb(0, 0, 255);
+}
+
+.mas-vendido ol li div img {
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.etiqueta-img {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ofert {
+  height: 100vh;
+}
+.marcas {
+  height: 50vh;
+}
+
+.logo-footer {
+  width: 100px;
+  height: 100px;
 }
