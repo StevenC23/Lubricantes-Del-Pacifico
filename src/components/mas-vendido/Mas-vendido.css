@@ -34,8 +34,11 @@
   box-shadow: 0px 0px 20px black;
 }
 
-.mas-vendido-item:hover .price {
+.mas-vendido-item:hover .mas-vendido-valor {
   opacity: 1;
+}
+.mas-vendido-item:hover .mas-vendido-valor img {
+  pointer-events: all;
 }
 
 .mas-vendido-item:hover .mas-vendido-div-img img {
@@ -58,10 +61,30 @@
   margin: 10px;
   pointer-events: none;
 }
+.mas-vendido-div-text h3 {
+  height: 65px;
+  overflow: hidden;
+}
 
-.mas-vendido-div-text .price {
+.mas-vendido-valor {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px 0 0;
+  opacity: 0;
+  color: blue;
+  transition: all 0.2s;
+}
+
+.mas-vendido-valor img {
+  width: 30px;
+  height: 30px;
+}
+
+/* .mas-vendido-div-text .price {
   color: blue;
   opacity: 0;
   margin-top: 10px;
   transition: all 0.2s;
-}
+} */

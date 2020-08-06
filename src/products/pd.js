@@ -1,11 +1,11 @@
 // import objeto from "../ccc.jpg";
 // import logo from "../logo1.png";
-import br from "../barrel.png";
-import br1 from "../001-barrel.png";
-import br2 from "../002-biodiesel.png";
-import br3 from "../003-biodiesel-1.png";
-import br4 from "../004-gas-station-1.png";
-import br5 from "../005-gasoline.png";
+import br from "../imgs/barrel.png";
+import br1 from "../imgs/001-barrel.png";
+import br2 from "../imgs/002-biodiesel.png";
+import br3 from "../imgs/003-biodiesel-1.png";
+import br4 from "../imgs/004-gas-station-1.png";
+import br5 from "../imgs/005-gasoline.png";
 // import br6 from "../006-fuel.png";
 // import br7 from "../007-gas-station.png";
 // import br8 from "../008-gas.png";

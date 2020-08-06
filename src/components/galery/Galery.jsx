@@ -1,5 +1,5 @@
 import React from "react";
-import i from "../../Captura0.PNG";
+import i from "../../imgs/Captura0.PNG";
 import "./Galery.css";
 
 const Galery = () => {

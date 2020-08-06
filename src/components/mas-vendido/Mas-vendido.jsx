@@ -1,5 +1,6 @@
 import React from "react";
 import "./Mas-vendido.css";
+import cesta from "../../imgs/cesta.png";
 
 import { PRODUCTS } from "../../products/pd.js";
 
@@ -15,7 +16,16 @@ const Masvendido = () => {
             </div>
             <div className="mas-vendido-div-text">
               <h3>{pd.nombre}</h3>
-              <p className="price">{pd.precio}</p>
+              <div className="mas-vendido-valor">
+                <p className="price">{pd.precio}</p>
+                <img
+                  onClick={() => {
+                    console.log(pd.id);
+                  }}
+                  src={cesta}
+                  alt=""
+                />
+              </div>
             </div>
           </li>
         ))}
