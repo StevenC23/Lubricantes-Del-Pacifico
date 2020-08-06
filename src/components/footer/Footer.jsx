@@ -9,8 +9,14 @@ const Footer = () => {
         <figure>
           <img src={logo} alt="Imagen logo" className="logo-footer" />
         </figure>
-        <h2>Quienes somos</h2>
-        <h2>Ubicacion</h2>
+        <div className="quienes-somos">
+          <h2>Quienes somos</h2>
+          <h2>Informacion del negocio</h2>
+        </div>
+        <div className="quieres-somos">
+          <h2>Ubicacion</h2>
+          <h2>Ubicacion y telefonos de contacto</h2>
+        </div>
       </div>
     </footer>
   );

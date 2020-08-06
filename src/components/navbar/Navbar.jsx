@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../../logo1.png";
 import "./Navbar.css";
+import "../../interactions/index";
 
 const Navbar = () => {
   return (
@@ -20,16 +21,16 @@ const Navbar = () => {
         </div>
         <ol className="busqueda-interna">
           <li>
-            <a href="/">Categorias</a>
+            <a href="#categorias">Categorias</a>
           </li>
           <li>
-            <a href="/">Mas vendido</a>
+            <a href="#masvendido">Mas vendido</a>
           </li>
           <li>
-            <a href="/">Ofertas</a>
+            <a href="#ofertas">Ofertas</a>
           </li>
           <li>
-            <a href="/">Marcas</a>
+            <a href="#marcas">Marcas</a>
           </li>
         </ol>
       </nav>

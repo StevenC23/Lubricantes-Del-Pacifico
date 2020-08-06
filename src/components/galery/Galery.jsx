@@ -1,11 +1,11 @@
 import React from "react";
-import ny from "../../ny.jpg";
+import i from "../../Captura0.PNG";
 import "./Galery.css";
 
 const Galery = () => {
   return (
     <section className="galery-img">
-      <img src={ny} alt="" />
+      <img src={i} alt="" />
       <p className="galery-text">Su proveedor de confianza</p>
     </section>
   );

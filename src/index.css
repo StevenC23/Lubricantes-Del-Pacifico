@@ -3,10 +3,13 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "PT Sans", sans-serif;
+  scroll-behavior: smooth;
+  scroll-padding-top: 15px;
 }
 .App {
   /* background-color: rgb(233, 233, 233); */
-  background-color: rgb(0, 0, 73);
+  background-color: rgba(188, 69, 39, 0.6);
+  /* background-color: rgb(0, 0, 73); */
 }
 section {
   /* background-color: white; */

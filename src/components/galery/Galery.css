@@ -1,7 +1,7 @@
 .galery-img {
   margin: 0;
   padding: 0;
-  height: 50vh;
+  height: 60vh;
 }
 
 .galery-img img {
@@ -17,13 +17,14 @@
   position: absolute;
   top: 0;
   right: 0;
-  background: linear-gradient(rgba(255, 255, 255, 0), black);
+  /* background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0)); */
+  /* background-color: rgba(188, 69, 39, 0.6); */
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
 .galery-text {
   position: absolute;
-  bottom: 10px;
-  left: 10px;
+  bottom: 0;
   color: white;
+  font-size: 50px;
 }

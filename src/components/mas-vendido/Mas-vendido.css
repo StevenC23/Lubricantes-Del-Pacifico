@@ -1,40 +1,67 @@
-.mas-vendido ol {
-  display: flex;
-  flex-wrap: wrap;
+.mas-vendido {
+  background-color: rgb(188, 69, 39);
+  padding: 0px 0px 30px 0px;
+}
+.mas-vendido-titulo {
+  color: white;
+}
+.mas-vendido-lista {
   list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
 }
-.mas-vendido ol li {
-  width: 23%;
+
+.mas-vendido-item {
+  width: 200px;
   min-width: 200px;
-  max-width: 250px;
-  padding: 10px;
-}
+  height: 300px;
+  position: relative;
+  z-index: 10;
 
-.mas-vendido ol li .mas-vendido-div {
   background-color: white;
-  border: 2px solid white;
-  border-radius: 5px;
-  transition: all 0.5s;
+
+  margin: 40px 15px 5px;
+  border-radius: 10px;
+  position: relative;
+
+  transition: all 0.2s;
 }
-.mas-vendido ol li .mas-vendido-div:hover {
+
+.mas-vendido-item:hover {
   transform: scale(1.05);
-  box-shadow: 0px 0px 10px green;
-  border: 1px solid green;
-  color: rgb(0, 0, 255);
+  box-shadow: 0px 0px 20px black;
 }
 
-.mas-vendido ol li div img {
+.mas-vendido-item:hover .price {
+  opacity: 1;
+}
+
+.mas-vendido-item:hover .mas-vendido-div-img img {
+  margin-top: -30px;
+}
+
+/* ----------------------------------*/
+
+.mas-vendido-div-img img {
   width: 100%;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  padding: 5px;
+  margin-top: 0px;
+  border-radius: 20px;
+  transition: all 0.2s;
 }
 
-.mas-vendido-etiqueta-img {
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+/* ----------------------------------*/
+
+.mas-vendido-div-text {
+  margin: 10px;
+  pointer-events: none;
+}
+
+.mas-vendido-div-text .price {
+  color: blue;
+  opacity: 0;
+  margin-top: 10px;
+  transition: all 0.2s;
 }

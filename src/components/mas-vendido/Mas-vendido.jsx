@@ -5,17 +5,17 @@ import { PRODUCTS } from "../../products/pd.js";
 
 const Masvendido = () => {
   return (
-    <section className="mas-vendido">
-      <h2>Mas Vendido</h2>
-      <ol>
+    <section id="masvendido" className="mas-vendido">
+      <h2 className="mas-vendido-titulo">Mas Vendido</h2>
+      <ol className="mas-vendido-lista">
         {PRODUCTS.map((pd) => (
-          <li key={pd.id}>
-            <div className="mas-vendido-div">
-              <img src={pd.img} alt="objeto" />
-              <div className="mas-vendido-etiqueta-img">
-                <p>{pd.nombre}</p>
-                <p className="mas-vendido-precio">{pd.precio}</p>
-              </div>
+          <li key={pd.id} className="mas-vendido-item">
+            <div className="mas-vendido-div-img">
+              <img src={pd.img} alt="" />
+            </div>
+            <div className="mas-vendido-div-text">
+              <h3>{pd.nombre}</h3>
+              <p className="price">{pd.precio}</p>
             </div>
           </li>
         ))}
