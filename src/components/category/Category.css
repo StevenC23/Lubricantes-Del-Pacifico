@@ -14,6 +14,7 @@
 .categorias-list img {
   width: 150px;
   padding: 5px 15px;
+  transition: all 0.2s;
 }
 .categorias-list .c {
   width: 130px;
@@ -22,13 +23,8 @@
   width: 130px;
 }
 
-.categoria-p {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 10px 15px;
-}
+/*--------------------*/
 
-.categoria-p p {
-  padding: 0px 15px;
+.categorias-list img:hover {
+  transform: scale(1.2);
 }
